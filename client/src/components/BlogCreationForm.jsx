@@ -46,7 +46,7 @@ const BlogCreationForm = () => {
         },
       };
 
-      await axios.post("http://localhost:5000/api/blogs", formData, config);
+      await axios.post("https://blog-app-three-flax.vercel.app/api/blogs", formData, config);
       setBlogData({
         heading: "",
         body: "",

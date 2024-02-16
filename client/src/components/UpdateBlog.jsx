@@ -24,7 +24,7 @@ const UpdateBlog = () => {
         return;
       }
 
-      await axios.put(`http://localhost:5000/api/blogs/${id}`, blog, {
+      await axios.put(`https://blog-app-three-flax.vercel.app/api/blogs/${id}`, blog, {
         headers: {
           Authorization: `Bearer ${blogToken}`
         }

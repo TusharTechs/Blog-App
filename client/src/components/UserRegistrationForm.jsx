@@ -38,7 +38,7 @@ const UserRegistrationForm = () => {
       formData.append("password", userData.password);
       formData.append("profilePicture", userData.profilePicture);
 
-      await axios.post("http://localhost:5000/api/users/register", formData, {
+      await axios.post("https://blog-app-three-flax.vercel.app/api/users/register", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

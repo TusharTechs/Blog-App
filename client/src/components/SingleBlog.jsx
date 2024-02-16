@@ -14,7 +14,7 @@ const SingleBlog = () => {
     const fetchBlogById = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/blogs/${id}`
+          `https://blog-app-three-flax.vercel.app/api/blogs/${id}`
         );
         setBlog(response.data);
         setLoading(false);

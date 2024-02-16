@@ -18,7 +18,7 @@ const BlogList = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/blogs");
+        const response = await axios.get("https://blog-app-three-flax.vercel.app/api/blogs");
         setBlogs(response.data);
       } catch (error) {
         console.error("Error fetching blogs:", error);
@@ -32,7 +32,7 @@ const BlogList = () => {
     try {
       const blogToken = localStorage.getItem("blogToken");
       const response = await axios.delete(
-        `http://localhost:5000/api/blogs/${id}`,
+        `https://blog-app-three-flax.vercel.app/api/blogs/${id}`,
         {
           headers: {
             Authorization: `Bearer ${blogToken}`,

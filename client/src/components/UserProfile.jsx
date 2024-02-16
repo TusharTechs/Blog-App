@@ -20,7 +20,7 @@ const UserProfile = () => {
         };
 
         const response = await axios.get(
-          `http://localhost:5000/api/users/profile/${userId}`,
+          `https://blog-app-three-flax.vercel.app/api/users/profile/${userId}`,
           config
         );
         setUserData(response.data);
